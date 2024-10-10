@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    text-decoration: none;
+}
+a{
+    color: black;
+}
+li{
+    list-style: none;
+}
+header{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.serach input{
+    padding: 4px 10px;
+    
+}
+.serach button{
+    padding: 4px ;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: aliceblue;
+}
+.cart{
+    font-size: large;
+}
+.nav{
+    width: 100%;
+    padding: 10px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+.nav ul li{
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 4px;
+}
+.nav ul li:hover{
+    background-color: rgb(202, 123, 4);
+   border-radius: 4px;
+
+}
+.products{
+    
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    
+    grid-template-columns: repeat(4, 1fr);
+    
+
+}
+.item {
+    background-color: aliceblue;
+    border: 1px solid black; 
+    border-radius: 4px; 
+    padding: 10px; 
+    text-align: center; 
+    transition: transform 1s ease-in-out;  
+}
+.item:hover{
+    
+    transform: translateY(-4px);
+    
+}
+footer{
+    padding: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.connect ul{
+    display: flex;
+
+}
+@media screen and (max-width: 480px){
+    body{
+        width: 100%;
+    }
+    .products{
+        
+        width: 80%;
+        grid-template-columns:repeat(1, 1fr);
+        margin: auto;
+        
+
+    }
+    .header{
+        padding: 0px;
+    }
+    .serach{
+        display: flex;
+        margin-right: 2px;
+    }
+    .serach input{
+        padding: 2px 5px;
+    }
+    .serach button{
+        padding: 1px;
+    }
+    .cart{
+        display: none;
+    }
+
+    
+}
+
+ 
+ @media  screen and (max-width:760px)  {
+    body{
+        width: 100%;
+    }
+    .products{
+        
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin: auto;
+        
+
+    }
+    
+    
+ }
